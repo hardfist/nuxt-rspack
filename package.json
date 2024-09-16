@@ -17,5 +17,10 @@
   "devDependencies": {
     "@nuxt/webpack-builder": "^3.13.1",
     "@rspack/core": "npm:@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@nuxt/webpack-builder@3.13.1": "patches/@nuxt__webpack-builder@3.13.1.patch"
+    }
   }
 }
