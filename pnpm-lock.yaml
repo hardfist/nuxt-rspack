@@ -26,10 +26,10 @@ dependencies:
 devDependencies:
   '@nuxt/webpack-builder':
     specifier: ^3.13.1
-    version: 3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5)
+    version: 3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5)
   '@rspack/core':
-    specifier: npm:@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
-    version: /@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
+    specifier: npm:@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901
+    version: /@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901
 
 packages:
 
@@ -1407,7 +1407,7 @@ packages:
       - webpack-sources
     dev: false
 
-  /@nuxt/webpack-builder@3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5):
+  /@nuxt/webpack-builder@3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5):
     resolution: {integrity: sha512-nlePVkWRu9dbkgus1fBefQde+BTBBphnZHGQEP4Q8GtemU+0gUWWBQrtWZDCrIgR2Ciwh/BozfYY7mjXkleF9A==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -1416,7 +1416,7 @@ packages:
       '@nuxt/friendly-errors-webpack-plugin': 2.6.0(webpack@5.94.0)
       '@nuxt/kit': 3.13.1(magicast@0.3.5)
       autoprefixer: 10.4.20(postcss@8.4.47)
-      css-loader: 7.1.2(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(webpack@5.94.0)
+      css-loader: 7.1.2(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(webpack@5.94.0)
       css-minimizer-webpack-plugin: 7.0.0(webpack@5.94.0)
       cssnano: 7.0.6(postcss@8.4.47)
       defu: 6.1.4
@@ -1438,7 +1438,7 @@ packages:
       postcss: 8.4.47
       postcss-import: 16.1.0(postcss@8.4.47)
       postcss-import-resolver: 2.0.0
-      postcss-loader: 8.1.1(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(postcss@8.4.47)(typescript@5.6.2)(webpack@5.94.0)
+      postcss-loader: 8.1.1(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(postcss@8.4.47)(typescript@5.6.2)(webpack@5.94.0)
       postcss-url: 10.1.3(postcss@8.4.47)
       pug-plain-loader: 1.1.0(pug@3.0.3)
       std-env: 3.7.0
@@ -1871,94 +1871,94 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@rspack/binding-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-KtLyD2C9JW8QROhBWw26OcVKwwV2s8JwD+wMDQAkB+V3phfeEGNDF4l/AJE3wAHxdMVh74sVbaLN9NYS1h+nTg==}
+  /@rspack/binding-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-11TE00tg9sZ44+lXmpLz5dOWpxm/jId+oWKaSSafjRGMoYzks7X1SA1bba4S7lOO1RF3VVXTE3Q2qZJQpfFBKQ==}
     optionalDependencies:
-      '@rspack/binding-darwin-arm64': /@rspack/binding-darwin-arm64-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-darwin-x64': /@rspack/binding-darwin-x64-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-linux-arm64-gnu': /@rspack/binding-linux-arm64-gnu-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-linux-arm64-musl': /@rspack/binding-linux-arm64-musl-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-linux-x64-gnu': /@rspack/binding-linux-x64-gnu-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-linux-x64-musl': /@rspack/binding-linux-x64-musl-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-win32-arm64-msvc': /@rspack/binding-win32-arm64-msvc-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-win32-ia32-msvc': /@rspack/binding-win32-ia32-msvc-canary@1.0.6-canary-5232fdf7-20240915174224
-      '@rspack/binding-win32-x64-msvc': /@rspack/binding-win32-x64-msvc-canary@1.0.6-canary-5232fdf7-20240915174224
+      '@rspack/binding-darwin-arm64': /@rspack/binding-darwin-arm64-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-darwin-x64': /@rspack/binding-darwin-x64-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-linux-arm64-gnu': /@rspack/binding-linux-arm64-gnu-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-linux-arm64-musl': /@rspack/binding-linux-arm64-musl-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-linux-x64-gnu': /@rspack/binding-linux-x64-gnu-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-linux-x64-musl': /@rspack/binding-linux-x64-musl-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-win32-arm64-msvc': /@rspack/binding-win32-arm64-msvc-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-win32-ia32-msvc': /@rspack/binding-win32-ia32-msvc-canary@1.0.6-canary-e7ce3527-20240916151901
+      '@rspack/binding-win32-x64-msvc': /@rspack/binding-win32-x64-msvc-canary@1.0.6-canary-e7ce3527-20240916151901
     dev: true
 
-  /@rspack/binding-darwin-arm64-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-pSNL9Aoed2p5Y+3wMisB4MEUwyG8D0uI1R3AWEtvhkOiTvs6yPNIv6sUSOyhw10uS9mwZj1F2x7lxRhBLDmzqA==}
+  /@rspack/binding-darwin-arm64-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-TNXe0zYPckgm8o+MdCwDu7NrWhjwvtyt4S8JugmJHglksA6Ew+pmNaaKN1MXh/fwNpwRImA+j/NmeYutVyzRBw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-darwin-x64-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-9rmdYUqzI0im1DAEGC0HCxOhyrnpG5adUTNW5Jq5+63/QKNiHNPnnV9HjQc4n1MBQarZZi5oHf7xfmWKTnPXzw==}
+  /@rspack/binding-darwin-x64-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-wLNu6YsawDkaiJ+fsCzf0Bugk4RpysU2JpN08aTNwAXBDHstY0vrWopD5oqVQr1xFV1YrlgxzOCj75l9lQsKwg==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-linux-arm64-gnu-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-aKwuKTRsSGcwbKDBivJ35K9oV9uAOdAMd9cRaGifzVkcGqAwrYFhuJkWagN+il5uX8g+5QbJsQEGllxLpy/bbw==}
+  /@rspack/binding-linux-arm64-gnu-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-DGDrI8Z9yi2yjW+U7qdX7/UGTgt+WBjp9rA/CI/0VGxQ/zT459pKjDaCHpCIGnQpRkwZS4tV+cqN2AgJJ2cjhQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-linux-arm64-musl-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-AKqoYvXlAwik88/boFIkiB30IvSJlFLUbFUwB7FK1vV2GX8UFzCts731Aum2sM6ZeVLsJ5cVCbcCzb2gs46niw==}
+  /@rspack/binding-linux-arm64-musl-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-1UeWW7ypBjfQhS1qKZqC6yc4gYWuIpQWh2vfDtJ/6WqK8A1qvvZyWBtu9+Az4zU8ZmhJ98YMRyLRNUXrv7AD/A==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-linux-x64-gnu-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-bDlYx+URRZ3EAj4TOaE6EJ5JIZ7m6uYJVDzH6ryCwjhWp8iaGRS9Kgm1t2E6RoSCPvo3n1GENTJYm5Y8QTxTdg==}
+  /@rspack/binding-linux-x64-gnu-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-EShIkPRhUjtrzms3P03J2fo0hWsYXM5G0xILXdLAoIyOW7T4sqiZJBaHiQAa+U1JZ9ZZQ1suqcxnKWIgnDJe8Q==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-linux-x64-musl-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-qf6wpxbUdmjtpImbjFqPYoo8OaPZkEnEsR6vhZFmGTQApJBkcSb4EDyaD90dq9SzrBSxBBk4kAm53HunylVmIw==}
+  /@rspack/binding-linux-x64-musl-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-SLsKrH7RQL5rwXmhiMwTvXxP8WFriLzMXnE9Ne7UIFeNu8AD5faue/8WD2kirmXBdSZU6lQqo8z3sx4SK38a0w==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-win32-arm64-msvc-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-KydwteEaYwQR/rbm2gnDsrjJaDFItdlGIgzySVIebAJ0wiGcyNqxnvslIH2Lqp3PGPlINOAxyeYvZmIyfbhu0g==}
+  /@rspack/binding-win32-arm64-msvc-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-1NtTBBPQ8gr18MfN+gRqZEi6fW6LoH12G1Dw3X7TnEpRKFFzziXNmGOI98BsdwhfbU5xMsKw00zkNdExbhP59w==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-win32-ia32-msvc-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-msJpoBzHcSJ3oy0v2tP4Bv8cqikY+jsFB1xD6pokh4N2E6y2S8f6k7LjVDb+Sok/6dcLyoxzV293AnclvQzI8A==}
+  /@rspack/binding-win32-ia32-msvc-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-WrfRrUmaqMj2uPD4oAd1+mzmMM+8rvRtDxkiTzGVh9ZSnAqR0QH50LR9zFmzPPDKb61ePqcT9aBI7PgGQLhzPw==}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/binding-win32-x64-msvc-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-n18szWRM0bh51q9hfAGcTOVx2w9bI6Lix690hNp2NOiLehvjbvHV/uzn23/ciVX+khK3kiKUpDKvEepXBDXL2w==}
+  /@rspack/binding-win32-x64-msvc-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-rWBhrMLHkZoy1vsrVmWLWyjgzlhGn6l4JrjKbwolxn+5zg31EhooMJbdp830Ze0isaByajuqrjohKwnbor9JPA==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224:
-    resolution: {integrity: sha512-m4+pkiLY6B1flj8jk/J4WeamOrNx6F07oYpNsMTS9CX2tfJylIZ4pXHqE9/bPW5YV9vBleooHeGNDq9w1As1fQ==}
+  /@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901:
+    resolution: {integrity: sha512-M/rd0xiv8og24/n4QzR6tSNRMlAYY+pragURjq0Wj5O9VrzXa9jPPCzPCfcEZ1UFP1rekPlqrKIfXcNZnxq7FA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@swc/helpers': '>=0.5.1'
@@ -1967,7 +1967,7 @@ packages:
         optional: true
     dependencies:
       '@module-federation/runtime-tools': 0.5.1
-      '@rspack/binding': /@rspack/binding-canary@1.0.6-canary-5232fdf7-20240915174224
+      '@rspack/binding': /@rspack/binding-canary@1.0.6-canary-e7ce3527-20240916151901
       '@rspack/lite-tapable': 1.0.0
       caniuse-lite: 1.0.30001660
     dev: true
@@ -3060,7 +3060,7 @@ packages:
     dependencies:
       postcss: 8.4.47
 
-  /css-loader@7.1.2(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(webpack@5.94.0):
+  /css-loader@7.1.2(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(webpack@5.94.0):
     resolution: {integrity: sha512-6WvYYn7l/XEGN8Xu2vWFt9nVzrCn39vKyTEFf/ExEyoksJjjSZV/0/35XPlMbpnr6VGhZIUg5yJrL8tGfes/FA==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -3072,7 +3072,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      '@rspack/core': /@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
+      '@rspack/core': /@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901
       icss-utils: 5.1.0(postcss@8.4.47)
       postcss: 8.4.47
       postcss-modules-extract-imports: 3.1.0(postcss@8.4.47)
@@ -5425,7 +5425,7 @@ packages:
       resolve: 1.22.8
     dev: true
 
-  /postcss-loader@8.1.1(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(postcss@8.4.47)(typescript@5.6.2)(webpack@5.94.0):
+  /postcss-loader@8.1.1(@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901)(postcss@8.4.47)(typescript@5.6.2)(webpack@5.94.0):
     resolution: {integrity: sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -5438,7 +5438,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      '@rspack/core': /@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
+      '@rspack/core': /@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901
       cosmiconfig: 9.0.0(typescript@5.6.2)
       jiti: 1.21.6
       postcss: 8.4.47
