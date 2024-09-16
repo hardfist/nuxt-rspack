@@ -1,0 +1,16 @@
+diff --git a/index.js b/index.js
+index 04182c4c6f7e9b76dcfbb459234be5fde8432335..fecb86186df8e0e2c1d0ae9d0e0f9b98c2abc344 100644
+--- a/index.js
++++ b/index.js
+@@ -28,9 +28,9 @@ module.exports = class TimeFixPlugin {
+       if (watching && !fixed) {
+         // webpack 5: #3
+         if (stats.compilation.startTime) {
+-          stats.compilation.startTime -= this.watchOffset
++          // stats.compilation.startTime -= this.watchOffset
+         } else {
+-          stats.startTime -= this.watchOffset
++          // stats.startTime -= this.watchOffset
+         }
+         fixed = true
+       }

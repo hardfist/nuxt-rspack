@@ -20,7 +20,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@nuxt/webpack-builder@3.13.1": "patches/@nuxt__webpack-builder@3.13.1.patch"
+      "@nuxt/webpack-builder@3.13.1": "patches/@nuxt__webpack-builder@3.13.1.patch",
+      "time-fix-plugin@2.0.7": "patches/time-fix-plugin@2.0.7.patch"
     }
   }
 }
