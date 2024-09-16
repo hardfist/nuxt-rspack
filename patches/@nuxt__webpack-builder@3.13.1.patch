@@ -1,25 +1,27 @@
 diff --git a/dist/index.mjs b/dist/index.mjs
-index a301a2243b871dcac1e5a1de283509d8516c923a..e59bbe0e067c55099ce1bab66f22ac3d3d8981bd 100644
+index a301a2243b871dcac1e5a1de283509d8516c923a..2cd0225f2b270eb7cf7232750cbb353df8ed6743 100644
 --- a/dist/index.mjs
 +++ b/dist/index.mjs
-@@ -1,5 +1,5 @@
+@@ -1,5 +1,7 @@
  import pify from 'pify';
 -import webpack from 'webpack';
-+import webpack from '@rspack/core';
++import webpack1 from 'webpack';
++import rspack from '@rspack/core';
++let webpack = process.env.WEBPACK ? webpack1 : rspack;
  import { fromNodeMiddleware, defineEventHandler } from 'h3';
  import webpackDevMiddleware from 'webpack-dev-middleware';
  import webpackHotMiddleware from 'webpack-hot-middleware';
-@@ -26,7 +26,8 @@ import WebpackBar from 'webpackbar';
+@@ -26,7 +28,8 @@ import WebpackBar from 'webpackbar';
  import FriendlyErrorsWebpackPlugin from '@nuxt/friendly-errors-webpack-plugin';
  import { isTest } from 'std-env';
  import { EsbuildPlugin } from 'esbuild-loader';
 -import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-+// import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-+const MiniCssExtractPlugin = webpack.CssExtractRspackPlugin;
++import MiniCssExtractPlugin1 from 'mini-css-extract-plugin';
++const MiniCssExtractPlugin = process.env.WEBPACK ? MiniCssExtractPlugin1 : webpack.CssExtractRspackPlugin;
  import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
  import createResolver from 'postcss-import-resolver';
  import VueLoaderPlugin from 'vue-loader/dist/pluginWebpack5.js';
-@@ -316,10 +317,13 @@ class ChunkErrorPlugin {
+@@ -316,10 +319,13 @@ class ChunkErrorPlugin {
    apply(compiler) {
      compiler.hooks.thisCompilation.tap(
        pluginName,
@@ -37,7 +39,7 @@ index a301a2243b871dcac1e5a1de283509d8516c923a..e59bbe0e067c55099ce1bab66f22ac3d
      );
    }
  }
-@@ -444,7 +448,7 @@ class WarningIgnorePlugin {
+@@ -444,7 +450,7 @@ class WarningIgnorePlugin {
    }
    apply(compiler) {
      compiler.hooks.done.tap("warnfix-plugin", (stats) => {
@@ -46,7 +48,7 @@ index a301a2243b871dcac1e5a1de283509d8516c923a..e59bbe0e067c55099ce1bab66f22ac3d
      });
    }
  }
-@@ -926,7 +930,7 @@ class VueSSRClientPlugin {
+@@ -926,7 +932,7 @@ class VueSSRClientPlugin {
          assetsMapping
        };
        const { entrypoints = {}, namedChunkGroups = {} } = stats;

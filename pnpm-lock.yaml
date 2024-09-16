@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@nuxt/webpack-builder@3.13.1':
-    hash: 5esokpp5atsfhy4pgnaf3cd6ni
+    hash: egjh56usn4zxxfe7kiyo6wkw24
     path: patches/@nuxt__webpack-builder@3.13.1.patch
   time-fix-plugin@2.0.7:
     hash: dnpng224qsns7sej6ghh3kmrwm
@@ -26,7 +26,7 @@ dependencies:
 devDependencies:
   '@nuxt/webpack-builder':
     specifier: ^3.13.1
-    version: 3.13.1(patch_hash=5esokpp5atsfhy4pgnaf3cd6ni)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5)
+    version: 3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5)
   '@rspack/core':
     specifier: npm:@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
     version: /@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224
@@ -1407,7 +1407,7 @@ packages:
       - webpack-sources
     dev: false
 
-  /@nuxt/webpack-builder@3.13.1(patch_hash=5esokpp5atsfhy4pgnaf3cd6ni)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5):
+  /@nuxt/webpack-builder@3.13.1(patch_hash=egjh56usn4zxxfe7kiyo6wkw24)(@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224)(pug@3.0.3)(typescript@5.6.2)(vue@3.5.5):
     resolution: {integrity: sha512-nlePVkWRu9dbkgus1fBefQde+BTBBphnZHGQEP4Q8GtemU+0gUWWBQrtWZDCrIgR2Ciwh/BozfYY7mjXkleF9A==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
