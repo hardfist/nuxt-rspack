@@ -1,0 +1,60 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index a301a2243b871dcac1e5a1de283509d8516c923a..a95b421160afd0498d46512df2ab467b5d2eb0d9 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -1,5 +1,8 @@
+ import pify from 'pify';
+-import webpack from 'webpack';
++import webpack1 from 'webpack';
++import rspack from '@rspack/core';
++let webpack = process.env.WEBPACK ? webpack1 : rspack;
++console.log(`using ${process.env.WEBPACK ? 'webpack' : 'rspack'}`);
+ import { fromNodeMiddleware, defineEventHandler } from 'h3';
+ import webpackDevMiddleware from 'webpack-dev-middleware';
+ import webpackHotMiddleware from 'webpack-hot-middleware';
+@@ -26,7 +29,8 @@ import WebpackBar from 'webpackbar';
+ import FriendlyErrorsWebpackPlugin from '@nuxt/friendly-errors-webpack-plugin';
+ import { isTest } from 'std-env';
+ import { EsbuildPlugin } from 'esbuild-loader';
+-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
++import MiniCssExtractPlugin1 from 'mini-css-extract-plugin';
++const MiniCssExtractPlugin = process.env.WEBPACK ? MiniCssExtractPlugin1 : webpack.CssExtractRspackPlugin;
+ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+ import createResolver from 'postcss-import-resolver';
+ import VueLoaderPlugin from 'vue-loader/dist/pluginWebpack5.js';
+@@ -316,10 +320,13 @@ class ChunkErrorPlugin {
+   apply(compiler) {
+     compiler.hooks.thisCompilation.tap(
+       pluginName,
+-      (compilation) => compilation.mainTemplate.hooks.localVars.tap(
+-        { name: pluginName, stage: 1 },
+-        (source) => source + script
+-      )
++      (compilation) => {
++
++      }
++      // (compilation) => compilation.mainTemplate.hooks.localVars.tap(
++      //   { name: pluginName, stage: 1 },
++      //   (source) => source + script
++      // )
+     );
+   }
+ }
+@@ -444,7 +451,7 @@ class WarningIgnorePlugin {
+   }
+   apply(compiler) {
+     compiler.hooks.done.tap("warnfix-plugin", (stats) => {
+-      stats.compilation.warnings = stats.compilation.warnings.filter(this.filter);
++      //stats.compilation.warnings = stats.compilation.warnings.filter(this.filter);
+     });
+   }
+ }
+@@ -926,7 +933,7 @@ class VueSSRClientPlugin {
+         assetsMapping
+       };
+       const { entrypoints = {}, namedChunkGroups = {} } = stats;
+-      const assetModules = stats.modules.filter((m) => m.assets.length);
++      const assetModules = stats.modules.filter((m) => m.assets?.length);
+       const fileToIndex = (file) => webpackManifest.all.indexOf(file);
+       stats.modules.forEach((m) => {
+         if (m.chunks.length === 1) {

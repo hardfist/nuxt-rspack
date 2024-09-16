@@ -5,6 +5,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:webpack": "WEBPACK=true nuxt dev",
+    "build:webpack": "WEBPACK=true nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +18,12 @@
   },
   "devDependencies": {
     "@nuxt/webpack-builder": "^3.13.1",
-    "@rspack/core": "npm:@rspack/core-canary@1.0.6-canary-5232fdf7-20240915174224"
+    "@rspack/core": "npm:@rspack/core-canary@1.0.6-canary-e7ce3527-20240916151901"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@nuxt/webpack-builder@3.13.1": "patches/@nuxt__webpack-builder@3.13.1.patch",
+      "time-fix-plugin@2.0.7": "patches/time-fix-plugin@2.0.7.patch"
+    }
   }
 }
